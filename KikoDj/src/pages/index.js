@@ -14,6 +14,7 @@ const IndexPage = () => (
     <p>This is a test</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
+      {/* test teste teste testes testicles */}
     </div>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
