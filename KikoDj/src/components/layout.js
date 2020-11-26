@@ -10,6 +10,9 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Hero from './hero';
+import BlackHero from './blackHero'
+import SocialLinks from './socialLinks';
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -26,7 +29,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
+      {/* <Hero /> */}
+      {/* <BlackHero /> */}
+      <SocialLinks />
+      {/* <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
@@ -41,7 +47,7 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
-      </div>
+      </div> */}
     </>
   )
 }
