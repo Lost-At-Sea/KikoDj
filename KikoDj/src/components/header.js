@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          Kiko
+          <img src="../assets/transparentLogo.png" title="K!KO Logo" alt="K!KO Logo" />
         </Link>
       </h1>
     </div>
@@ -25,7 +25,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `DJ K!KO`,
 }
 
 export default Header

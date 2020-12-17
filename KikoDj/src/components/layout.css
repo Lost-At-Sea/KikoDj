@@ -4,9 +4,9 @@ html {
   /* font: 112.5%/1.45em georgia, serif, sans-serif; */
   box-sizing: border-box;
   /* overflow-y: scroll; */
+  /* background-color: #202020; */
   background-color: black;
-  /* background-color: black; */
-  background-image: -webkit-linear-gradient(
+  /* background-image: -webkit-linear-gradient(
       left,
       rgba(0, 0, 0, 1) 15%,
       rgba(0, 0, 0, 0.9) 25%,
@@ -18,7 +18,8 @@ html {
       rgba(0, 0, 0, 0.05) 55%,
       rgba(2, 255, 2, 0) 60%
     ),
-    url(../assets/KikoFullBody.jpg);
+    url(../assets/DSC04381-Edit-resize-min.png); */
+  /* background-image: url(../assets/DSC04381-Edit-resize-min.png); */
   background-repeat: no-repeat;
   background-position: left;
   -moz-background-size: auto;
@@ -26,6 +27,13 @@ html {
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+.row {
+  height: 675px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: flex-start;
 }
 body {
   margin: 0;
@@ -59,7 +67,7 @@ body {
 }
 @media only screen and (min-width: 600px) {
   html {
-    background-image: -webkit-linear-gradient(
+    /* background-image: -webkit-linear-gradient(
         left,
         rgba(0, 0, 0, 1) 55%,
         rgba(0, 0, 0, 0.9) 57%,
@@ -71,7 +79,7 @@ body {
         rgba(0, 0, 0, 0.05) 63%,
         rgba(2, 255, 2, 0) 63%
       ),
-      url(../assets/KikoFullBody.jpg);
+      url(../assets/KikoFullBody.jpg); */
     background-position: right;
     background-size: contain;
   }
@@ -79,6 +87,27 @@ body {
   #gatsby-focus-wrapper {
     max-width: 1080px;
     margin: 0 auto;
+    padding: 0 45px;
+  }
+
+  .row {
+    flex-direction: row;
+    height: 900px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .slick-initialized {
+    width: 90%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 900px;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 article,

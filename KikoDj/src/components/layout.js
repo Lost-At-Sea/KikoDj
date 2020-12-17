@@ -11,9 +11,10 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Hero from './hero';
-import BlackHero from './blackHero'
 import SocialLinks from './socialLinks';
+import Carousel from './carousel';
 import "./layout.css"
+import Bio from "./bio";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,9 +30,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      {/* <Hero /> */}
-      {/* <BlackHero /> */}
-      <SocialLinks />
+
+      <div className="row">
+        <div className="column"> 
+          <Bio />
+          <Carousel />
+          <SocialLinks />
+        </div>
+        <Hero />
+      </div>
       {/* <div
         style={{
           margin: `0 auto`,

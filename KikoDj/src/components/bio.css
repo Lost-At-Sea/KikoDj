@@ -1,0 +1,21 @@
+.bio {
+  display: none;
+  /* margin-left: 15%;
+  margin-top: 5%; */
+}
+
+.bio p {
+  color: white;
+  font-family: monospace;
+  font-size: 10pt;
+}
+
+@media only screen and (min-width: 600px) {
+  .bio {
+    display: inline-block;
+  }
+
+  .bio p {
+    font-size: 14pt;
+  }
+}
