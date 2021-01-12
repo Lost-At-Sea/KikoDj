@@ -8,13 +8,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+// import { useMediaQuery } from 'react-responsive';
 
 import Header from "./header"
 import Hero from './hero';
 import SocialLinks from './socialLinks';
-import Carousel from './carousel';
-import "./layout.css"
+import EmailSignup from './emailSignup';
 import Bio from "./bio";
+import Carousel from './carousel';
+import SoundCloudWidget from './Soundcloud';
+import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,18 +30,48 @@ const Layout = ({ children }) => {
     }
   `)
 
+  // const isDesktop = useMediaQuery({ query: '(min-device-width: 900px)' });
+  // const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
+  function DesktopLayout(props) {
+    const desktopDevice = props.isDesktop;
+
+    if(desktopDevice) {
+      return (
+        <div className="column">
+          <Bio />
+          <Carousel />
+        </div>
+      );
+    }
+  }
+  
+  //console.log('isDesktop: ', isDesktop);
+
   return (
-    <>
+    <div>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
       <div className="row">
         <div className="column"> 
-          <Bio />
-          <Carousel />
+          {/* <DesktopLayout isDesktop={isDesktop} /> */}
+          <Bio mobile="false" />
+          <Carousel mobile="false" />
           <SocialLinks />
         </div>
         <Hero />
       </div>
+      <div className="column" mobile="true" id="mobileBio">
+        <hr className="divider" />
+        <Bio mobile="true" />
+        <Carousel mobile="true" />
+      </div>
+      <hr className="divider" />
+      <SoundCloudWidget />
+      <hr className="divider" />
+      <EmailSignup />
+      <footer>
+          © {new Date().getFullYear()}, Built by Henry Doce
+      </footer>
       {/* <div
         style={{
           margin: `0 auto`,
@@ -55,7 +88,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div> */}
-    </>
+    </div>
   )
 }
 

@@ -27,13 +27,7 @@ html {
   background-size: cover;
   width: 100%;
   height: 100%;
-}
-.row {
-  height: 675px;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  align-items: flex-start;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -65,6 +59,44 @@ body {
   max-width: 100%;
   margin: 0 auto;
 }
+.row {
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: flex-start;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+[mobile="false"] {
+  display: none;
+}
+[mobile="true"] .slick-slider {
+  width: 95vw;
+  max-width: 85%;
+  margin: 0 auto;
+}
+hr.divider {
+  margin: 60px auto;
+  width: 45%;
+  border-top: 3px solid white;
+}
+footer {
+  color: white;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+@media only screen and (max-width: 360px) {
+  .row {
+    height: 86vh;
+  }
+}
 @media only screen and (min-width: 600px) {
   html {
     /* background-image: -webkit-linear-gradient(
@@ -85,29 +117,67 @@ body {
   }
 
   #gatsby-focus-wrapper {
-    max-width: 1080px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 45px;
+    padding: 15px 60px;
   }
 
   .row {
     flex-direction: row;
-    height: 900px;
+    height: 850px;
+    /* max-height: 90vh; */
     justify-content: space-between;
     align-items: center;
   }
 
-  .slick-initialized {
-    width: 90%;
+  .carousel {
+    width: 89%;
+  }
+
+  .slick-slider {
+    width: 100%;
+    margin: 30px auto 15px;
   }
 
   .column {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     height: 900px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+  }
+
+  [mobile="false"] {
+    display: inline-block;
+  }
+
+  [mobile="true"] {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .column {
+    width: 60%;
+  }
+
+  #gatsby-focus-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 15px 60px;
+  }
+
+  hr.divider {
+    margin: 120px auto;
+    width: 60%;
+    border-top: 3px solid white;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    margin-bottom: 30px;
   }
 }
 article,

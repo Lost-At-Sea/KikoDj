@@ -1,21 +1,36 @@
 .bio {
-  display: none;
-  /* margin-left: 15%;
-  margin-top: 5%; */
+  padding: 0 30px 15px;
+  /* margin-top: 30px; */
+  /* margin-bottom: 30px; */
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
+.bio h1,
+.bio p {
+  font-family: Roboto, sans-serif;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+}
+
+.bio h1 {
+  font-size: 24pt;
+  margin-bottom: 0.5rem;
 }
 
 .bio p {
-  color: white;
-  font-family: monospace;
-  font-size: 10pt;
+  font-size: 12pt;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
   .bio {
-    display: inline-block;
+    padding: 30px 0 0;
+    margin: 0;
   }
 
   .bio p {
-    font-size: 14pt;
+    font-size: 12pt;
+    line-height: 1.3em;
   }
 }

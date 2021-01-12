@@ -1,0 +1,47 @@
+.emailSignup {
+  margin: 0 auto 60px;
+  width: 300px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+}
+
+h5.signupMessage {
+  color: #ff6961;
+}
+
+.emailSignup h2 {
+  color: white;
+}
+
+.emailSignup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailSignup input {
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.email input:focus {
+  outline: none;
+  border: 1px solid #ff6961;
+}
+
+.emailSignup button {
+  background-color: #ff6961;
+  padding: 15px 30px;
+  width: 150px;
+  margin: 0 auto;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.emailSignup input,
+.emailSignup button {
+  border: none;
+  border-radius: 4px;
+}

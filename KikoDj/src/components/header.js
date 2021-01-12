@@ -2,20 +2,19 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import './header.css'
+import logo from '../assets/transparentLogo.png';
 
 const Header = ({ siteTitle }) => (
   <header>
     <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          <img src="../assets/transparentLogo.png" title="K!KO Logo" alt="K!KO Logo" />
-        </Link>
-      </h1>
+      <Link
+        to="/"
+        style={{
+          textDecoration: `none`,
+        }}
+      >
+        <img src={logo} title="K!KO Logo" alt="K!KO Logo" className="logo" />
+      </Link>
     </div>
   </header>
 )
