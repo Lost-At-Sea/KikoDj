@@ -1,7 +1,6 @@
 import React from "react";
 import "./emailSignup.css";
 import addToMailchimp from 'gatsby-plugin-mailchimp'
-import { check } from "prettier";
 
 export default class MyGatsbyComponent extends React.Component {
   state = {
@@ -28,7 +27,7 @@ export default class MyGatsbyComponent extends React.Component {
     e.preventDefault();
     const result = await addToMailchimp(this.state.email);
     this.setState({ message: result.msg });
-    console.log('signup message: ', this.state.message);
+    //console.log('signup message: ', this.state.message);
     this.updateFailedSignupMessage();
   };
 
@@ -51,15 +50,4 @@ export default class MyGatsbyComponent extends React.Component {
       </div>
     )
   }
-
-// export default function emailSignup() {
-//   return (
-//     <div className="emailSignup">
-//       <h2>Stay Up To Date!</h2>
-//       <form>
-//         <input placeholder="Enter email address"></input>
-//         <button>Submit</button>
-//       </form>
-//     </div>
-//   );  
 }

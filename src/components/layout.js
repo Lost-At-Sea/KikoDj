@@ -8,8 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-// import { useMediaQuery } from 'react-responsive';
-
 import Header from "./header"
 import Hero from './hero';
 import SocialLinks from './socialLinks';
@@ -30,27 +28,9 @@ const Layout = ({ children }) => {
     }
   `)
 
-  // const isDesktop = useMediaQuery({ query: '(min-device-width: 900px)' });
-  // const isMobile = useMediaQuery({ query: '(max-width: 900px)' });
-  function DesktopLayout(props) {
-    const desktopDevice = props.isDesktop;
-
-    if(desktopDevice) {
-      return (
-        <div className="column">
-          <Bio />
-          <Carousel />
-        </div>
-      );
-    }
-  }
-  
-  //console.log('isDesktop: ', isDesktop);
-
   return (
     <div>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-
       <div className="row">
         <div className="column"> 
           {/* <DesktopLayout isDesktop={isDesktop} /> */}
@@ -72,22 +52,6 @@ const Layout = ({ children }) => {
       <footer>
           © {new Date().getFullYear()}, Built by Henry Doce
       </footer>
-      {/* <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div> */}
     </div>
   )
 }

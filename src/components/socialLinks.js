@@ -1,16 +1,13 @@
 import React from 'react';
 import './socialLinks.css';
-// import SocialLink from './socialLink';
 import { FaSoundcloud, FaInstagram, FaTwitter, FaFacebook, FaTwitch } from "react-icons/fa";
 import { IoIosArrowDown } from 'react-icons/io';
 import { SiBeatport } from 'react-icons/si';
 import Bounce from 'react-reveal/Bounce';
-import Jump from 'react-reveal/Jump';
 
 const SocialLinks = () => (
   <Bounce left cascade>
     <ul className="SocialLinks">
-      {/* <SocialLink href="https://www.soundcloud.com/kiko_djofficial" alt="DJ Kiko Soundcloud" tagName="FaSoundcloud" /> */}
         <li>
           <a href="https://www.beatport.com/artist/k%21ko/932330" alt="DJ Kiko Beatport" target="_blank" rel="noreferrer">
             <SiBeatport className="fab"/>
