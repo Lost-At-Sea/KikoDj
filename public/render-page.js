@@ -127,7 +127,7 @@ var plugins = [{
     "short_name": "starter",
     "start_url": "/",
     "display": "minimal-ui",
-    "icon": "src/assets/K!KO Favicons/favicon-16x16.png",
+    "icon": "src/images/assets/K!KO Favicons/favicon-16x16.png",
     "cache_busting_mode": "query",
     "include_favicon": true,
     "legacy": true,
