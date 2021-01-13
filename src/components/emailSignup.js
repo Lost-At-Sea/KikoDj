@@ -33,7 +33,7 @@ export default class MyGatsbyComponent extends React.Component {
   render () {
     return (
       <div className="emailSignup">
-        <h2>Stay Up To Date!</h2>
+        <h2>Stay Up To Date</h2>
         <h5 className="signupMessage">{this.state.message}</h5>
         <form onSubmit={this.handleSubmit}>
           <input className="subscribe-email"
@@ -43,7 +43,7 @@ export default class MyGatsbyComponent extends React.Component {
             value={this.state.email}
             onChange={this.handleInputChange}
           />
-          <button type="submit">Submit</button>
+          <button type="submit">Sign Up</button>
         </form>
       </div>
     )
