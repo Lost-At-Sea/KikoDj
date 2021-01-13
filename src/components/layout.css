@@ -1,25 +1,8 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  /* font: 112.5%/1.45em georgia, serif, sans-serif; */
   box-sizing: border-box;
-  /* overflow-y: scroll; */
-  /* background-color: #202020; */
   background-color: black;
-  /* background-image: -webkit-linear-gradient(
-      left,
-      rgba(0, 0, 0, 1) 15%,
-      rgba(0, 0, 0, 0.9) 25%,
-      rgba(0, 0, 0, 0.8) 30%,
-      rgba(0, 0, 0, 0.7) 35%,
-      rgba(0, 0, 0, 0.6) 40%,
-      rgba(0, 0, 0, 0.4) 45%,
-      rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0.05) 55%,
-      rgba(2, 255, 2, 0) 60%
-    ),
-    url(../assets/DSC04381-Edit-resize-min.png); */
-  /* background-image: url(../assets/DSC04381-Edit-resize-min.png); */
   background-repeat: no-repeat;
   background-position: left;
   -moz-background-size: auto;
@@ -99,19 +82,6 @@ footer {
 }
 @media only screen and (min-width: 600px) {
   html {
-    /* background-image: -webkit-linear-gradient(
-        left,
-        rgba(0, 0, 0, 1) 55%,
-        rgba(0, 0, 0, 0.9) 57%,
-        rgba(0, 0, 0, 0.8) 58%,
-        rgba(0, 0, 0, 0.7) 59%,
-        rgba(0, 0, 0, 0.6) 60%,
-        rgba(0, 0, 0, 0.4) 61%,
-        rgba(0, 0, 0, 0.3) 62%,
-        rgba(0, 0, 0, 0.05) 63%,
-        rgba(2, 255, 2, 0) 63%
-      ),
-      url(../assets/KikoFullBody.jpg); */
     background-position: right;
     background-size: contain;
   }
@@ -125,7 +95,6 @@ footer {
   .row {
     flex-direction: row;
     height: 850px;
-    /* max-height: 90vh; */
     justify-content: space-between;
     align-items: center;
   }

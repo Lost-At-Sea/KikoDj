@@ -1,6 +1,6 @@
 import React from "react";
 import "./emailSignup.css";
-import addToMailchimp from 'gatsby-plugin-mailchimp'
+import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 export default class MyGatsbyComponent extends React.Component {
   state = {
@@ -27,7 +27,6 @@ export default class MyGatsbyComponent extends React.Component {
     e.preventDefault();
     const result = await addToMailchimp(this.state.email);
     this.setState({ message: result.msg });
-    //console.log('signup message: ', this.state.message);
     this.updateFailedSignupMessage();
   };
 
@@ -46,7 +45,6 @@ export default class MyGatsbyComponent extends React.Component {
           />
           <button type="submit">Submit</button>
         </form>
-
       </div>
     )
   }

@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import treehouseImage1 from '../images/assets/IMG_3954.jpg';
-import treehouseImage2 from '../images/assets/IMG_3957.JPG';
+import treehouseImage1 from '../images/assets/IMG3954.jpg';
+import treehouseImage2 from '../images/assets/IMG3957.JPG';
 import imageWithKoyu from '../images/assets/Kiko.jpg';
 
 export default function Carousel(props) {

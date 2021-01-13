@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import './header.css'
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import './header.css';
 import logo from '../images/assets/transparentLogo.png';
 
 const Header = ({ siteTitle }) => (
@@ -24,7 +24,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: `DJ K!KO`,
+  siteTitle: `DJ KIKO`,
 }
 
 export default Header
