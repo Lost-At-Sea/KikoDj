@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import smoothscroll from 'smoothscroll-polyfill';
 // import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Hero from './hero';
@@ -27,6 +28,8 @@ const Layout = ({ children }) => {
   //     }
   //   }
   // `)
+
+  smoothscroll.pollyfill();
 
   return (
     <div>
