@@ -2,7 +2,7 @@ header {
   padding: 0.5em 1.5em 0;
   background-color: transparent;
   margin-bottom: 0;
-  height: 80px;
+  height: 60px;
 }
 
 h1 a {
@@ -13,7 +13,8 @@ h1 a {
 }
 
 .logo {
-  width: 175px;
+  width: 150px;
+  height: 67px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -31,7 +32,7 @@ h1 a {
 
   .logo {
     width: 175px;
-    height: auto;
+    height: 78px;
     margin: 0;
     position: relative;
     left: -15px;
