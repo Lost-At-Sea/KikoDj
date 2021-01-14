@@ -43,7 +43,7 @@ body {
   margin: 0 auto;
 }
 .row {
-  height: 90vh;
+  height: 87vh;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -111,7 +111,7 @@ footer {
   .column {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 55%;
     height: 900px;
     justify-content: center;
     align-items: center;

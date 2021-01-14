@@ -37,7 +37,7 @@ ul.SocialLinks {
   }
 
   .SocialLinks li .fab {
-    font-size: 30pt;
+    font-size: 23pt;
     transition: color 2s position 2s;
   }
 
@@ -45,6 +45,16 @@ ul.SocialLinks {
     position: relative;
     bottom: 7px;
     color: #ff6961;
+  }
+
+  .SocialLinks [mobile="false"] .fab {
+    font-size: 55pt;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .SocialLinks li .fab {
+    font-size: 30pt;
   }
 
   .SocialLinks [mobile="false"] .fab {
