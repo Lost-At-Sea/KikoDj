@@ -9,12 +9,6 @@
   height: 100%;
 }
 
-.black-container {
-  background-color: black;
-  height: auto;
-  max-height: 1112px;
-}
-
 @media only screen and (min-width: 600px) {
   .hero {
     width: 262px;

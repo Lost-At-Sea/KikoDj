@@ -4,15 +4,13 @@ ul.SocialLinks {
   justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
-  height: 80%;
+  height: 85%;
   margin: 0;
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .SocialLinks li {
   margin-bottom: 0;
-  animation: bounce;
-  animation-duration: 2s;
 }
 
 .SocialLinks li .fab {
@@ -23,7 +21,6 @@ ul.SocialLinks {
 
 .SocialLinks [mobile="true"] .fab {
   font-size: 70pt;
-  margin-top: 5px;
 }
 
 @media only screen and (min-width: 600px) {
