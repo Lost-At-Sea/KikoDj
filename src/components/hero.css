@@ -1,0 +1,24 @@
+.hero {
+  background-image: url(../images/assets/DSC04381-Edit-resize-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: cover;
+  width: 57%;
+  height: 100%;
+}
+
+.black-container {
+  background-color: black;
+  height: auto;
+  max-height: 1112px;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero {
+    width: 262px;
+    height: 900px;
+    max-height: 100%;
+  }
+}

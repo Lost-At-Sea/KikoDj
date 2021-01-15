@@ -1,0 +1,16 @@
+.soundCloudWidget {
+  margin: 30px auto;
+  width: 90vw;
+  max-width: 90%;
+}
+
+.soundCloudWidget .iframe {
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 600px) {
+  .soundCloudWidget {
+    margin: 120px auto;
+    width: 600px;
+  }
+}

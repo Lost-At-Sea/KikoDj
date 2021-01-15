@@ -1,0 +1,39 @@
+header {
+  padding: 0.5em 1.5em 0;
+  background-color: transparent;
+  margin-bottom: 0;
+  height: 80px;
+}
+
+h1 a {
+  color: white;
+  font-family: "AcquireLight";
+  letter-spacing: 5px;
+  font-size: 45pt;
+}
+
+.logo {
+  width: 175px;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    padding: 0.5em 0 0;
+  }
+
+  h1 {
+    text-align: unset;
+  }
+
+  h1 a {
+    font-size: 55pt;
+  }
+
+  .logo {
+    width: 175px;
+    height: auto;
+    margin: 0;
+    position: relative;
+    left: -15px;
+  }
+}

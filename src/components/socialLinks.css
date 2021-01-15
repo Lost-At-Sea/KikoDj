@@ -1,0 +1,63 @@
+ul.SocialLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  height: 80%;
+  margin: 0;
+  margin-top: 45px;
+}
+
+.SocialLinks li {
+  margin-bottom: 0;
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.SocialLinks li .fab {
+  color: white;
+  font-size: 30pt;
+  cursor: pointer;
+}
+
+.SocialLinks [mobile="true"] .fab {
+  font-size: 70pt;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  ul.SocialLinks {
+    height: 50px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
+
+  .SocialLinks li .fab {
+    font-size: 23pt;
+    transition: color 2s position 2s;
+  }
+
+  .SocialLinks li .fab:hover {
+    position: relative;
+    bottom: 7px;
+    color: #ff6961;
+  }
+
+  .SocialLinks [mobile="false"] .fab {
+    font-size: 55pt;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .SocialLinks li .fab {
+    font-size: 30pt;
+  }
+
+  .SocialLinks [mobile="false"] .fab {
+    font-size: 70pt;
+  }
+}
