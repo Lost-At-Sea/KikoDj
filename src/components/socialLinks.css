@@ -11,19 +11,16 @@ ul.SocialLinks {
 
 .SocialLinks li {
   margin-bottom: 0;
-  animation: bounce;
-  animation-duration: 2s;
 }
 
 .SocialLinks li .fab {
   color: white;
-  font-size: 30pt;
+  font-size: 27pt;
   cursor: pointer;
 }
 
 .SocialLinks [mobile="true"] .fab {
   font-size: 70pt;
-  margin-top: 5px;
 }
 
 @media only screen and (min-width: 600px) {

@@ -21,7 +21,7 @@ h5.signupMessage {
 }
 
 .emailSignup input {
-  margin-bottom: 30px;
+  margin: 0 5px 30px;
   padding: 15px;
 }
 
